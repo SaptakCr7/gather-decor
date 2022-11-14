@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body .container .items {
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  border-radius: 20px;
+}
+body .container .items .btn {
+  background-color: #ed491a;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+body .container .items #form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .items #form .logoimages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+}
+body .container .items #form .logoimages #responsive1 {
+  width: 30%;
+  height: auto;
+}
+body .container .items #form .logoimages #responsive2 {
+  width: 100%;
+  height: auto;
+}
+body .container .items #form .inputboxes {
+  top: 30%;
+  width: 120%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body .container .items #form .inputboxes #fname {
+  width: 300px;
+}
+body .container .items #form .inputboxes input {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
+  border: none;
+  margin: 20px 13px;
+}
+body .container .items #form .inputboxes input:hover {
+  border: 1px solid black;
+}
+body .container .items .options {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+body .container .items .options button {
+  padding-top: 3px;
+  height: 28px;
+  width: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  color: #020929;
+  cursor: pointer;
+}
+body .container .items .options button:hover {
+  background-color: lightblue;
+}
+body .container .items .options select {
+  padding: 7px;
+  border: 1px solid #020929;
+  border-radius: 3px;
+}
+body .container .items .options select .options label,
+body .container .items .options select .options select {
+  font-family: "Poppins", sans-serif;
+}
+body .container .items .options .input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 13px;
+}
+body .container .items .options .input-wrapper input[type=color] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 40px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+}
+body .container .items .options .input-wrapper input[type=color]::-webkit-color-swatch {
+  border-radius: 15px;
+}
+body .container .items .options .input-wrapper input[type=color]::-moz-color-swatch {
+  border-radius: 15px;
+}
+body .container div:empty:before {
+  content: attr(data-placeholder);
+  color: gray;
+  font-size: 5;
+}
+body .container #text-input {
+  background-color: #ffffff;
+  line-height: 20px;
+  padding: 20px;
+  min-height: 40vh;
+  border-radius: 10px;
+  width: 95%;
+}
+body .container #text-input:hover {
+  border: 1px solid black;
+}
+body .container .active {
+  background-color: #e0e9ff;
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@page {
+  size: 21cm, 29.7cm;
+  margin: 0mm;
+}
